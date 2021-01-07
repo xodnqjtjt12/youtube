@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>hompPage</title>
+ 
+    
+    <link rel="stylesheet" href="./company_mobile.css" media="(max-width:600px)">
+ 
+   
+    <!-- <link rel="stylesheet" href="company.css" media="(min-width:600px)"> -->
+    <style type="text/css">
+    *{margin: 0px; padding: 0px;}
+ul{list-style: none;} /* 리스트 앞에 . 같은거 제거*/
+a{text-decoration: none;} /* 링크에 밑줄 같은거 제거*/
+ 
+header{
+    width: 800px; 
+    height: 350px;
+    background-color: #2d3a4b;
+  
+    position: relative;
+}
+ 
+/* 제목영역안에 있는 메인 로고 이미지 위치 지정 */
+#logo{
+	clear:both;
+	display: inline-block;
+    top: 30px;
+    left: 30px;
+}
+ 
+/* 제목영역안에 오른쪽 상단에 top_menu 배치 */
+#top_menu{
+	float: right;
+    display: inline-block;
+    color: white;
+    margin: 10px 10px 0 0;    
+}
+ 
+/* top_menu a의 글시 하얀색으로 */
+#top_menu a{
+	color: white;
+}
+ 
+/* 헤더 영역안에 네비게이션 메뉴 배치 */
+nav{
+    position: absolute;
+    bottom: 10px;
+    left: 220px;
+    font-size: 16px;
+}
+ 
+nav li{
+    display: inline;
+    margin-left: 30px;
+}
+ 
+nav li a{color: white;}
+ 
+/* 콘텐츠 영역의 알래에 있는 배너 이미지 inline으로 */
+#content li{
+    display: inline;
+    margin-left: 50px;
+}
+/* footer 영역 */
+footer{
+    width: 800px; /*헤더와 같은 사이즈*/
+    height: 90px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+ 
+/* 전체 페이지가 가운데로 오도록 */
+#page{
+	width: 820px;
+	height: 1000px;
+	margin: 0px auto;
+}
+    </style>
+    
+    <script type="text/javascript">
+    function rank() {
+    	alert("로그인 후 이용가능합니다");
+    }
+    
+    </script>
+    
+    
+    
+</head>
+<body>
+
+    
+    <div id="page">
+ 
+        <header>
+        	<div id="top_menu">
+                
+                <a href="session_login.jsp">LOGIN</a> 
+                <a href="join.jsp">회원가입</a>
+            </div>
+            <div id="logo">
+                <img src="../image/youtubemusic.jpg" alt="Logo">
+            </div>
+            
+      
+            <nav>
+                <ul>
+                
+                    <li> <a id="rank" onclick="rank()">이달의 순위</a></li>
+                    <li><a id="rank" onclick="rank()">최신곡</a></li>
+                    <li><a id="rank" onclick="rank()">인기아티스트</a></li>
+                    <li><a id="rank" onclick="rank()">인기곡</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+    <video autoplay="autoplay" controls="controls"
+    source src="../video/youtube.mp4" type="video/youtube.mp4">
+    </video>
+ 
+        <article id="content">
+            
+                
+            
+          
+ 
+        </article>
+ 
+        <footer>
+           <h2>YoutubeMusic</h2>
+         
+        </footer>
+ 
+    </div>
+</body>
+</html>
